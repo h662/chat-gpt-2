@@ -14,16 +14,7 @@ const ChatView = ({ chatList }) => {
         {chatList.length === 0
           ? "채팅이 없습니다."
           : chatList.map((v, i) => (
-              <>
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-                <ChatCard key={i} answer={v.answer} question={v.question} />
-              </>
+              <ChatCard key={i} answer={v.answer} question={v.question} />
             ))}
       </ul>
     </div>
